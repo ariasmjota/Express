@@ -1,6 +1,10 @@
-window.addEventListener('load', () => {
-    var img = document.querySelector('img');
-    img.addEventListener('click', () => {
-        alert('hola');
-    });
+var input = document.querySelector('.input');
+
+input.addEventListener('change', (event) => {  
+
+    var filtro = event.target.value;
+    console.log(filtro);
+
+    window.location = `?f=${filtro}`;
+
 });
